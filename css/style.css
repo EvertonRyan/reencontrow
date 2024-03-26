@@ -13,7 +13,7 @@ html, body{
 header{
     display: flex;
     justify-content: center;
-    padding: 1.5rem;
+    padding: 2rem 0;
 }
 
 header span{
@@ -27,14 +27,20 @@ header span.blue{
     color: #1A7993;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
 main .hero{
     color: #FFF;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 5rem;
 }
 
 .hero-text h3{
+    color: #B7B7B7;
     font-weight: normal;
     margin-bottom: 0.5rem;
 }
@@ -73,7 +79,6 @@ main .hero{
     flex-direction: column;
     align-items: center;
     gap: 3rem;
-    margin-top: 14rem;
 }
 
 .cards-title h2{
@@ -117,7 +122,6 @@ main .hero{
     color: #FFF;
     display: flex;
     justify-content: space-around;
-    margin-top: 14rem;
 }
 
 .description-texts h2{
@@ -160,7 +164,6 @@ main .hero{
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    margin-top: 14rem;
 }
 
 .login h2{
@@ -210,14 +213,13 @@ form .input-group{
 
 footer{
     text-align: center;
-    padding: 6rem;
+    padding: 4rem;
 }
 
 .footer-title h3{
     color: #FFF;
     font-weight: normal;
     text-transform: uppercase;
-    margin-bottom: 2rem;
 }
 
 .social-media{
@@ -225,6 +227,7 @@ footer{
     justify-content: center;
     gap: 2rem;
     list-style: none;
+    margin-top: 2rem;
 }
 
 .social-media li a{
@@ -235,105 +238,32 @@ footer{
 /* RESPONSIVIDADE */
 
 @media screen and (max-width: 1024px) {
-    .hero-image{
+    .hero-image > img, .description-image > img {
         display: none;
     }
 
-    .cards-content{
+    .cards-content {
         display: grid;
         grid-template-columns: 2fr 2fr;
-    }
-
-    .description h2{
-        font-size: 1.5rem;
-    }
-
-    .description-image{
-        display: none;
     }
 }
 
 @media screen and (max-width: 768px) {
-    header span{
-        font-size: 1.2rem;
-    }
-    
-    .hero h1{
-        font-size: 1rem;
+    .hero-text > h1 {
+        font-size: 2rem;
     }
 
-    .hero h3{
-        font-size: 0.5rem;
-    }
-
-    .hero a{
-        padding: 1rem 1rem;
-    }
-
-    .hero-image{
-        display: none;
-    }
-
-    .cards-title h2{
-        font-size: 0.8rem;
-    }
-
-    .cards-content{
+    .cards-content {
         display: grid;
         grid-template-columns: 1fr;
     }
 
-    .cards-content .card a{
-        width: 150px;
-        height: 150px;
-        font-size: 0.8rem;
-    }
-
-    .cards-content .card .fa-heart{
-        font-size: 2rem;
-    }
-
-    .description{
-        height: 35vh;
-    }
-
-    .description-texts h2{
-        font-size: 0.8rem;
-    }
-
-    .description-texts p{
-        font-size: 0.6rem;
-        line-height: 1rem;
-    }
-
-    .description-texts a{
-        font-size: 0.8rem;
-        padding: 1rem 2rem;
-    }
-
-    .login-title h2{
-        font-size: 0.6rem;
-    }
-
-    form .input-group input{
-        width: 230px;
-        height: 30px;
-        font-size: 0.6rem;
-    }
-
-    .input-group input[type="submit"]{
-        font-size: 0.6rem;
-    }
-
-    footer{
-        padding: 5rem;
-    }
-
-    .footer-title h3{
-        font-size: 1rem;
-    }
-
-    .social-media li a{
+    .description-texts > h2 {
         font-size: 1.5rem;
+    }
+
+    .input-group input{
+        width: 400px;
+        height: 50px;
     }
 }
