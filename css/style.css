@@ -264,6 +264,7 @@ footer{
 @media screen and (max-width: 768px) {
     .hero-text {
         text-align: center;
+        font-size: .8rem;
     }
 
     .hero-text > h1 {
