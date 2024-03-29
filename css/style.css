@@ -69,6 +69,7 @@ main .hero{
 
 .hero-image img{
     width: 400px;
+    border-radius: 8px;
 }
 
 /* SECTION CARDS */
@@ -81,7 +82,8 @@ main .hero{
     gap: 3rem;
 }
 
-.cards-title h2{
+h2{
+    color: #FFF;
     text-transform: uppercase;
 }
 
@@ -116,44 +118,46 @@ main .hero{
 
 /* SECTION DESCRIPTION */
 
-.description{
-    height: 45vh;
+.description {
     background-color: #1A7993;
     color: #FFF;
     display: flex;
     justify-content: space-around;
 }
 
-.description-texts h2{
-    text-transform: uppercase;
+.description-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+}
+
+.description-text > h2 {
     font-size: 2rem;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
 }
 
-.description-texts p{
-    line-height: 1.5rem;
+.description-text > p {
+    font-size: 1.8rem;
 }
 
-.description-texts a{
+.description-text > a {
     background-color: #FFF;
-    color: #000;
-    display: inline-block;
-    border-radius: 5px;
+    color: #383838;
     text-decoration: none;
-    font-weight: bold;
+    text-align: center;
     text-transform: uppercase;
-    margin-top: 2rem;
-    padding: 1.5rem 6rem;
-    transition: .2s;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 1rem;
+    transition: background .2s;
 }
 
-.description-texts a:hover{
-    background-color: #CECECE;
+.description-text a:hover{
+    background-color: #D5D5D5;
 }
 
 .description-image img{
-    width: 215px;
+    width: 250px;
     height: 100%;
 }
 
@@ -167,17 +171,18 @@ main .hero{
 }
 
 .login h2{
-    color: #FFF;
     text-align: center;
     text-transform: uppercase;
 }
 
-form .input-group{
-    margin-bottom: 1rem;
+.login-form > form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .input-group input{
-    width: 500px;
+    width: 40vw;
     height: 50px;
     border: none;
     outline: none;
@@ -238,13 +243,21 @@ footer{
 /* RESPONSIVIDADE */
 
 @media screen and (max-width: 1024px) {
-    .hero-image > img, .description-image > img {
+    img {
         display: none;
     }
 
     .cards-content {
         display: grid;
-        grid-template-columns: 2fr 2fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .description {
+        padding: 2rem 0;
+    }
+
+    .input-group > input {
+        width: 50vw;
     }
 }
 
@@ -253,17 +266,18 @@ footer{
         font-size: 2rem;
     }
 
+    .cards-title > h2,
+    .description-text > h2,
+    .description-text > p,
+    .login-title > h2{
+        font-size: 1.2rem;
+    }
+
     .cards-content {
-        display: grid;
         grid-template-columns: 1fr;
     }
 
-    .description-texts > h2 {
-        font-size: 1.5rem;
-    }
-
-    .input-group input{
-        width: 400px;
-        height: 50px;
+    .input-group > input {
+        width: 70vw;
     }
 }
