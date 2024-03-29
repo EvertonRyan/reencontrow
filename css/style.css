@@ -262,15 +262,20 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
+    .hero-text {
+        text-align: center;
+    }
+
     .hero-text > h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .cards-title > h2,
     .description-text > h2,
     .description-text > p,
     .login-title > h2{
-        font-size: 1.2rem;
+        font-size: 1rem;
+        text-align: center;
     }
 
     .cards-content {
