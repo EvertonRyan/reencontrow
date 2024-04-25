@@ -7,104 +7,98 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Reencontrow</title>
 </head>
 <body>
     <header>
-        <span>Reencon<span class="blue">trow</span></span>
+        <span class="logo">Reencon<span class="logo blue">trow</span></span>
     </header>
 
-    <main>
+    <main id="container">
         <section class="hero">
             <div class="hero-text">
-                <h3>Uma plataforma completa de informações</h3>
-                <h1>já são mais de 4 mil <br> pessoas conectadas <br> em nossa comunidade</h1>
-                <a href="#">quero participar</a>
+                <h3 class="hero-subtitle">Uma plataforma completa de informações</h3>
+                <h1 class="hero-title">Já são mais de 4 mil <br> pessoas econectadas <br> em nossa comunidade</h1>
+                <a href="#" class="hero-button">Quero participar</a>
             </div>
             <div class="hero-image">
-                <img src="images/family.jpg" alt="Foto em família">
+                <img src="images/family.jpg" alt="Foto em Família" class="hero-img">
             </div>
         </section>
+        <section class="pricipal-topics">
+            <h2 class="pricipal-topics-title">Principais assuntos abordados</h2>
 
-        <section class="cards">
-            <div class="cards-title">
-                <h2>principais assuntos abordados</h2>
-            </div>
-            <div class="cards-content">
-                <div class="card">
+            <div class="cards">
+                <div class="card card1">
                     <a href="#">
-                        <span class="fa-regular fa-heart"></span>
-                        <span class="link-title">relacionamento</span>
+                        <i class="fa-regular fa-heart"></i>
+                        <span>Relacionamento</span>
                     </a>
                 </div>
-                <div class="card">
+                <div class="card card2">
                     <a href="#">
-                        <span class="fa-regular fa-heart"></span>
-                        <span class="link-title">sabedoria</span>
+                        <i class="fa-regular fa-heart"></i>
+                        <span>Sabedoria</span>
                     </a>
                 </div>
-                <div class="card">
+                <div class="card card3">
                     <a href="#">
-                        <span class="fa-regular fa-heart"></span>
-                        <span class="link-title">amor</span>
+                        <i class="fa-regular fa-heart"></i>
+                        <span>Amor</span>
                     </a>
                 </div>
-                <div class="card">
+                <div class="card card4">
                     <a href="#">
-                        <span class="fa-regular fa-heart"></span>
-                        <span class="link-title">amizade</span>
+                        <i class="fa-regular fa-heart"></i>
+                        <span>Amizade</span>
                     </a>
                 </div>
             </div>
         </section>
-
-        <section class="description">
-            <div class="description-text">
-                <h2>uma comunidade sobre <br> relacionamentos amorosos...</h2>
-                <p>Ensinamentos para você conquistar o seu amor. <br> Pra você que é acanhado(a)...</p>
-
-                <a href="#">quero fazer parte</a>
+        <section class="community">
+            <div class="community-text">
+                <h2 class="community-title">Uma comunidade sobre <br> relacionamentos amorosos...</h2>
+                <p class="community-paragraph">Ensinamentos para você conquistar o seu amor. <br> Pra você que é acanhado(a)...</p>
+                <a href="#" class="community-button">Quero fazer parte</a>
             </div>
-            <div class="description-image">
-                <img src="images/casal.avif" alt="Casal se abraçando">
+            <div class="community-image">
+                <img src="images/casal.avif" alt="Casal Abraçado" class="community-img">
             </div>
         </section>
-        
-        <section class="login">
-            <div class="login-title">
-                <h2>receba nossos materiais educativos <br> gratuitamente em seu email</h2>
-            </div>
-            <div class="login-form">
-                <form>
-                    <div class="input-group">
-                        <input type="text" name="nome" placeholder="seu nome" required>
-                    </div>
-                    <div class="input-group">
-                        <input type="email" name="email" placeholder="seu email" required>
-                    </div>
-                    <div class="input-group">
-                        <input type="submit" value="quero receber">
-                    </div>
-                </form>
-            </div>
-        </section>
+        <section class="form-section">
+            <h2 class="form-title">Receba nossos materiais educativos <br> graduitamente em seu email</h2>
 
-        <footer>
-            <div class="footer-title">
-                <h3>nossas redes sociais</h3>
-            </div>
-            <ul class="social-media">
-                <li>
-                    <a href="#"><span class="fa-brands fa-instagram"></span></a>
-                </li>
-                <li>
-                    <a href="#"><span class="fa-brands fa-x-twitter"></span></a>
-                </li>
-                <li>
-                    <a href="#"><span class="fa-brands fa-facebook-f"></span></a>
-                </li>
-            </ul>
-        </footer>
+            <form class="form">
+                <div class="input-group">
+                    <input type="text" name="nome" id="nome" placeholder="SEU NOME" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="email" id="email" placeholder="SEU EMAIL" required>
+                </div>
+                <div class="input-group">
+                    <input type="submit" value="QUERO RECEBER" class="button">
+                </div>
+            </form>
+        </section>
     </main>
+    <footer>
+        <h2 class="footer-title">Nossas redes sociais</h2>
+
+        <ul class="footer-social-media">
+            <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/animation.js"></script>
 </body>
 </html>
