@@ -118,6 +118,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 1rem;
 }
 
 .community-title {
@@ -131,12 +132,11 @@ section {
 }
 
 .community-button {
-    width: 100%;
     background-color: #FFF;
     color: #383838;
     text-align: center;
     border-radius: .5rem;
-    padding: 1rem 0;
+    padding: 1rem 5rem;
     transition: background .2s;
 }
 
